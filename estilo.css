@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eca590;
+    background-image: url(img/fondo.png);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fcf4dd;
+    box-shadow: 100px 40px 60px rgba(0,0,0,.5);
+    border-radius: 100px;
+} 
+
+/*TEXTO*/
+h1{
+    font-family: 'Forum', cursive;
+    font-size: 60px;
+}
+h2{
+    font-family: 'Forum', cursive;
+    font-size: 48px;
+    color: #499176;
+}
+.lead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+p strong{
+    font-weight: 400
+}
+.hero{
+    font-family: 'Forum', cursive;
+    font-size: 80px;
+    text-align: end;
+}
+.small{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fcf4dd;
+    font-weight: 400;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.ul-nav{
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+/*NAV*/
+.logo-grande{
+    margin-top: 175px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fcf4dd;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+nav{
+    height: 75px;
+    background-color: #eca590;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 15px 20px rgba(0,0,0,.5);
+    position:fixed;
+    width: 100%;
+	top:0;
+    border-radius: 50px;
+    z-index: 2000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #499176;
+}
+
+/*HERO*/
+
+.img-hero{
+    height: 894px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    background-image: url(img/manos-mesa.jpg);
+    box-shadow: 100px 40px 60px rgba(0,0,0,.5);
+    border-radius: 100px;
+}
+
+.hero-contenido{
+    height: 150px;
+    border-radius: 40px;
+    box-shadow: 40px 25px 30px rgba(0,0,0,.5);
+    padding: 10px 30px;
+    background-color: #eca590;
+    color: #fcf4dd;
+    
+    margin-top: 590px;
+    margin-left: 320px;
+    margin-right: -80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*MAIN*/
+
+main {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+main article div img{
+    border-radius: 100px;
+    box-shadow: 10px 7px 15px rgba(0,0,0,.5);
+}
+
+main article p {
+    padding: 40px 40px 0px 40px;
+}
+
+main article h1 {
+    height: 100px;
+    color: #fcf4dd;        
+    background-color: #eca590;
+    display: flex;
+    justify-content: center;
+    align-content: center;        
+    align-items: center;
+    border-radius: 20px;
+}
+
+/*BLENDS*/
+section{
+    margin-bottom: 100px;
+}
+
+section h1{
+    height: 100px;
+    color: #fcf4dd;
+    background-color: #eca590;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.blends{
+    height: 725px;
+    display: flex;
+    flex-direction: row;
+    border-color: #fcf4dd;
+    justify-content: space-evenly;
+}
+
+.blends article{
+    width: 400PX;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    width: 162px;
+    height: 42px;
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #499176;
+    font-weight: 400;
+    color: #fcf4dd;
+    box-shadow: 10px 7px 15px rgba(0,0,0,.5);
+}
+
+.boton:hover{
+    background-color: #eca590;
+}
+
+.descripcion{
+    width: 200px;
+    text-align: center;
+}
+
+section div article h2{
+    padding: 20px;
+}
+
+section div article div{
+    padding-bottom: 20px;
+}
+
+section div article p{
+    padding-bottom:20px
+}
+
+/*CONTACTANOS*/
+#texto-costado{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacto-div{
+    width:400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacto-art{
+    padding: 40px 40px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.redes-art{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactanos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article ul li a img {
+    padding-bottom: 20px;
+}
+
+article ul{
+    padding-top: 40px;
+}
+
+.iconos{
+    padding-right: 20px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #499176;
+    color: #fcf4dd;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 100px 40px 60px rgba(0,0,0,.5);
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 100px;
+}
