@@ -13,12 +13,13 @@ body {
     background-size: cover;
 }
 
-.c{
+.contenedor{
     width: 1000px;
     margin: 0 auto;
     background-color: #fcf4dd;
     box-shadow: 100px 40px 60px rgba(0,0,0,.5);
     border-radius: 100px;
+    padding-bottom: 40px;
 } 
 
 /*TEXTO*/
@@ -29,6 +30,12 @@ h1{
 h2{
     font-family: 'Forum', cursive;
     font-size: 48px;
+    color: #499176;
+}
+
+.ofertas-h2{
+    font-family: 'Forum', cursive;
+    font-size: 36px;
     color: #499176;
 }
 .lead{
@@ -54,7 +61,7 @@ p strong{
     font-size: 12px;
     font-weight: 400;
 }
-a {
+a{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #fcf4dd;
@@ -65,35 +72,42 @@ ul{
     list-style: none;
 }
 
-.ul-nav{
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
-}
-/*NAV*/
-.logo-grande{
-    margin-top: 175px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #fcf4dd;
+/*FIGURE*/
+.figure{
+    padding-top: 95px;
     display: flex;
     align-content: center;
     justify-content: center;
-    border-radius: 100px;
 }
 
+/*NAV*/
 nav{
-    height: 75px;
+    height: 95px;
     background-color: #eca590;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow:0px 15px 20px rgba(0,0,0,.5);
-    position:fixed;
-    width: 100%;
-	top:0;
-    border-radius: 50px;
-    z-index: 2000;
+    top: 0;
+    position: fixed;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 0px 0px 50px 50px;
+    z-index: 1000;
+}
+
+nav div{
+    padding-top: 5px;
+    margin-left: -7px;
+}
+
+.ul-nav{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 20px;
 }
 
 nav ul{
@@ -102,6 +116,10 @@ nav ul{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+nav ul li{
+    padding: 15px;
 }
 
 nav ul li a:hover {
@@ -121,10 +139,10 @@ nav ul li a:hover {
 }
 
 .hero-contenido{
-    height: 150px;
+    height: 260px;
     border-radius: 40px;
     box-shadow: 40px 25px 30px rgba(0,0,0,.5);
-    padding: 10px 30px;
+    padding: 22px 22px;
     background-color: #eca590;
     color: #fcf4dd;
     
@@ -136,6 +154,22 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.boton-hero{
+    width: 162px;
+    height: 50px;
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #499176;
+    font-weight: 400;
+    color: #fcf4dd;
+    box-shadow: 10px 7px 15px rgba(0,0,0,.5);
 }
 
 /*MAIN*/
@@ -182,10 +216,6 @@ main article h1 {
 }
 
 /*BLENDS*/
-section{
-    margin-bottom: 100px;
-}
-
 section h1{
     height: 100px;
     color: #fcf4dd;
@@ -199,25 +229,28 @@ section h1{
 }
 
 .blends{
-    height: 725px;
     display: flex;
     flex-direction: row;
     border-color: #fcf4dd;
     justify-content: space-evenly;
+    padding: 20px 0px;
 }
 
 .blends article{
-    width: 400PX;
-    height: 725px;
+    width: 275PX;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    border: 6px #499176;
+    border-style: double;
+    margin: 20px 0px;
 }
 
 .boton{
-    width: 162px;
-    height: 42px;
+    width: 150px;
+    height: 70px;
     text-align: center;
     padding: 10px 12px 10px 12px;
     margin-bottom: 20px;
@@ -238,16 +271,76 @@ section h1{
 }
 
 section div article h2{
-    padding: 20px;
+    padding-top: 20px;
 }
 
 section div article div{
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 section div article p{
     padding-bottom:20px
 }
+
+/*OFERTAS*/
+.ofertas{
+    display: flex;
+    flex-direction: row;
+    border-color: #fcf4dd;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.ofertas article{
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 6px #499176;
+    border-style: double;
+    margin: 20px 0px;
+}
+
+.boton-ofertas{
+    width: 125px;
+    height: 42px;
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #499176;
+    font-weight: 400;
+    color: #fcf4dd;
+    box-shadow: 10px 7px 15px rgba(0,0,0,.5);
+}
+
+.boton-ofertas:hover{
+    background-color: #eca590;
+}
+
+.descripcion-ofertas{
+    width: 235px;
+    text-align: center;
+}
+
+/*PRODUCTOS*/
+.productos{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.producto{
+    padding: 20px 20px;
+}
+
+
 
 /*CONTACTANOS*/
 #texto-costado{
@@ -294,13 +387,136 @@ article ul{
     padding-right: 20px;
 }
 
+/*FORMULARIO*/
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: 6px #499176;
+    border-style: double;
+}
+
+.espacio{
+    margin: 20px 0px;
+}
+
+.botones-formulario{
+    width: 608px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Nombre, #Apellido, #Edad, #Pais, #E-Mail, #Comentarios{
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px #eca590;
+    border-style: solid;
+    padding: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+input, textarea{
+    background-image: url(img/fondo-velo.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Nombre:focus, #Apellido:focus, #Edad:focus, #Pais:focus, #E-Mail:focus, #Comentarios:focus{
+    outline: none;
+    border: 3px #499176 solid;
+}
+
+/*BOTONES*/
+.envia,.borra{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fcf4dd;
+    font-weight: 400;
+    height: 42px;
+    padding: 7px 12px 10px 12px;
+    margin: 0px 15px;
+    border-radius: 15px;
+    box-shadow: 10px 7px 15px rgba(0,0,0,.5);
+    border: none;
+}
+
+.envia{
+    background-color: #499176;
+    border: 3px #499176 solid;
+}
+
+.envia:hover{
+    background-color: #eca590;
+    border: 3px #499176 solid;
+}
+
+.borra{
+    background-color: #eca590;
+    border: 3px #eca590 solid;
+}
+
+.borra:hover{
+    background-color: #499176;
+    border: 3px #eca590 solid;
+}
+/*FIN BOTONES*/
+
+.formulario h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.formulario p{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 /*FOOTER*/
 footer{
     background-color: #499176;
     color: #fcf4dd;
-    text-align: center;
-    padding: 20px;
+    
     box-shadow: 100px 40px 60px rgba(0,0,0,.5);
     border-radius: 50px 50px 0px 0px;
     margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+}
+
+footer div{
+    width: 235px;
+}
+
+footer div p{
+    padding-top: 10px;
 }

@@ -1,146 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Herba Infusiones</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="c logo-div">
-        <div class="logo-grande"><img src="img/herba-infusiones-organicas.png" alt="Logo Herba" title="Herba Infusiones Orgánicas"></div>
-    </div> 
+<!-- FIGURE -->
+    <figure class="figure">
+        <div class="fotorama">
+            <img src="img/pareja-mate.png" alt="Pareja Mate Cocina">
+            <img src="img/mate-cenital.png" alt="Mate Cenital">
+            <img src="img/mujer-mate.png" alt="Mujer Mate">
+            <img src="img/chico-cama.png" alt="Chico Cama">
+        </div>
+    </figure>
 <!-- NAV -->
     <nav>
-    <ul class="ul-nav">
-        <li><a href="#"><strong>INICIO</strong></a></li>
-        <li><a href="#nosotros"><strong>NOSOTROS</strong></a></li>
-        <li><a href="#blends"><strong>BLENDS</strong></a></li>
-        <li><a href="#contactanos"><strong>CONTACTANOS</strong></a></li>
-    </ul>
+        <div>
+            <a href="#"><img src="img/logo-nav.png" alt="Logo barra navegación" title="Inicio"></a>
+        </div>
+        <ul class="ul-nav">
+            <li><a href="#"><strong>INICIO</strong></a></li>
+            <li><a href="#nosotros"><strong>NOSOTROS</strong></a></li>
+            <li><a href="#blends"><strong>BLENDS</strong></a></li>
+            <li><a href="#ofertas"><strong>OFERTAS</strong></a></li>
+            <li><a href="#productos"><strong>PRODUCTOS</strong></a></li>                        
+            <li><a href="#contactanos"><strong>CONTACTANOS</strong></a></li>
+        </ul>
     </nav>
 <!-- HERO -->
-    <section class="c img-hero">
+    <header class="contenedor img-hero">
         <div class="hero-contenido">
-        <p class="hero">
-            PASIÓN POR EL MATE
-        </p>
-        <p class="lead">
-            <strong>#SumateALaRonda </strong>
-        </p>
+            <h1 class="hero">
+                PASIÓN POR EL MATE
+            </h1>
+            <p>
+                Suscribite a nuestro newsletter y obtené un código de descuento del 20%.
+                <div class="boton-hero"><a href="#registro">Registrate</a></div>
+                <p class="lead">
+                    <strong>#SumateALaRonda </strong>
+                </p>
         </div>
-    </section>
+    </header>
 <!-- MAIN -->
-    <main class="c main">
-    <article>
-        <h1 id="nosotros">NOSOTROS</h1>
-        <p>
-            <strong>Herba</strong> nace con la intención de brindarle a cada persona bienestar y salud,
-            elaboramos <strong>blends de yerba orgánica</strong> con reconocimiento del SENASA cumpliendo
-            estándares internacionales, la trazabilidad y alto control de nuestra producción
-            nos asegura un producto de calidad excepcional. <br>
-                Todos los ingredientes provienen de cooperativas agroecológicas de la zona norte del                
-            país; nuestra planta de empaquetado se localiza en próxima a la región donde más yerba
-            se produce, Misiones, precisamente en el parque industrial de Posadas. <br>
+    <main class="contenedor main">
+        <article>
+            <h1 id="nosotros">NOSOTROS</h1>
+            <p>
+                <strong>Herba</strong> nace con la intención de brindarle a cada persona bienestar y salud,
+                elaboramos <strong>blends de yerba orgánica</strong> con reconocimiento del SENASA cumpliendo
+                estándares internacionales, la trazabilidad y alto control de nuestra producción
+                nos asegura un producto de calidad excepcional.
+            </p>   
+            <p>
+                Todos los ingredientes provienen de cooperativas agroecológicas de la zona norte del
+                país; nuestra planta de empaquetado se localiza en próxima a la región donde más yerba
+                se produce, Misiones, precisamente en el parque industrial de Posadas.
                 Con el esfuerzo de todos los que trabajamos en Herba, logramos en 2018 exportar nuestro
-            producto a más de 30 países fuera del continente americano, convirtiendonos en 2021 en la empresa
-            que más toneladas de yerba exporta del país. <br>
-            Nuestro objetivo es brindar más que un mate, queremos entregar un producto que te haga sentir bien;
-            al mismo tiempo, nos preocupamos por cuidar el medioambiente, por esto Herba creó en el 2016 la
-            <strong> Fundación Herba </strong>, una organización sin fines de lucro interesada en proteger la
-            selva norteña de la deforestación indiscriminada, habitat natural de especies en peligro de extinción
-            por el accionar humano.
+                producto a más de 30 países fuera del continente americano, convirtiendonos en 2021 en la empresa
+                que más toneladas de yerba exporta del país.
             </p>
+            <p>
+                Nuestro objetivo es brindar más que un mate, queremos entregar un producto que te haga sentir bien;
+                al mismo tiempo, nos preocupamos por cuidar el medioambiente, por esto Herba creó en el 2016 la                    <strong> Fundación Herba </strong>, una organización sin fines de lucro interesada en proteger la
+                selva norteña de la deforestación indiscriminada, habitat natural de especies en peligro de extinción
+                por el accionar humano.
+            </p>    
         </article>
-    <article class="carrusel">
-        <div class="fotorama">
-            <img src="img/quintero.png" alt="Quintero">
-            <img src="img/manos-menta.png" alt="Manos menta">
-            <img src="img/recolectores.png" alt="Recolectores">
-            <img src="img/yerba-mate.png" alt="Yerba mate">
-        </div>
-    </article>
+        <article class="carrusel">
+            <div class="fotorama">    
+                <img src="img/quintero.png" alt="Quintero">
+                <img src="img/manos-menta.png" alt="Manos menta">
+                <img src="img/recolectores.png" alt="Recolectores">
+                <img src="img/yerba-mate.png" alt="Yerba mate">
+            </div>
+        </article>
     </main>
 <!-- BLENDS -->
-    <section class="c">
+    <section class="contenedor">
         <h1 id="blends">BLENDS</h1>
         <div class="blends">
             <article>
                 <h2>HIERBAS</h2>
                 <div>
-                    <img src="img/pack-hierbas.png" alt="Pack Blend Hierbas" title="Con Hierbas">
+                    <img src="img/pastilla-hierbas.png" alt="Blend Hierbas" title="Con Hierbas">
                 </div>
-                <a class="lead boton" href="#">Probala gratis</a>
+                <a class="lead boton" href="#">Conocé sus beneficios</a>
                 <p class="descripcion">Yerba orgánica con hierbas regionales.</p>
             </article>
             <article>
                 <h2>FRUTAS</h2>
                 <div>
-                    <img src="img/pack-frutas.png" alt="Pack Blend Frutas" title="Con Frutas">
+                    <img src="img/pastilla-frutas.png" alt="Blend Frutas" title="Con Frutas">
                 </div>
-                <a class="lead boton" href="#">Probala gratis</a>
+                <a class="lead boton" href="#">Conocé sus beneficios</a>
                 <p class="descripcion">Yerba orgánica con frutas desecadas.</p>
             </article>
             <article>
                 <h2>CAFÉ</h2>
                 <div>
-                    <img src="img/pack-cafe.png" alt="Pack Blend Café" title="Con Café">
+                    <img src="img/pastilla-cafe.png" alt="Blend Café" title="Con Café">
                 </div>
-                <a class="lead boton" href="#">Probala gratis</a>
+                <a class="lead boton" href="#">Conocé sus beneficios</a>
                 <p class="descripcion">Yerba orgánica con varietal de café.</p>
             </article>
         </div>
     </section>
-    <section class="c ">
-    <h1 id="contactanos">CONTACTANOS</h1>
-    <div class="contactanos">
-        <article class="contacto-art">
-            <div class="contacto-div">
-                <img class="iconos" src="img/correo-v.png" alt="E-Mail Ícono" title="E-Mail">
-                <p id="texto">
-                    <strong>
-                    E-Mail
-                    </strong> <br>
-                    info@herba.com.ar
-                </p>
+<!-- OFERTAS -->
+    <section class="contenedor">
+        <h1 id="ofertas">OFERTAS</h1>
+        <div class="ofertas">
+            <article>
+                <h2 class="ofertas-h2">DEGUSTACIÓN</h2>
+                <div>
+                    <img src="img/degustacion.png" alt="Degustacion" title="3 Blends">
+                </div>
+                <a class="lead boton-ofertas" href="#">$2.300,00</a>
+                <p class="descripcion-ofertas">Pagá 2 blends y recibí 3. Probá todos los sabores únicos de HERBA.</p>
+            </article>
+            <article>
+                <h2 class="ofertas-h2">FAMILIAR</h2>
+                <div>
+                    <img src="img/bolsa-arpillera.png" alt="Bolsa Arpillera" title="5 kg">
+                </div>
+                <a class="lead boton-ofertas" href="#">$4.600,00</a>
+                <p class="descripcion">Pagá 4 blends y recibí 5. Ideal para compartir entre muchos.</p>
+            </article>
+            <article>
+                <h2 class="ofertas-h2">SUPER COMBO</h2>
+                <div>
+                    <img src="img/equipo-matero.png" alt="Equipo Mate" title="Equipo Mate">
+                </div>
+                <a class="lead boton-ofertas" href="#">$10.500,00</a>
+                <p class="descripcion">Con el equipo matero recibís de regalo una compostera.</p>
+            </article>
+        </div>
+    </section>
+<!-- PRODUCTOS -->
+    <section class="contenedor">
+        <h1 id="productos">Productos</h1>
+        <p style="padding: 40px 0px 0px 0px; text-align: center;">Clickea la imagen para poder ver los poroductos en detalle.</p>
+        <div class="productos">
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Mate artesanal color crema" href="img/xl-mate-crema.png"> <title>Mate Crema</title>
+                    <img src="img/xs-mate-crema.png" alt="Mate Crema XS">
+                </a>
             </div>
-            <div class="contacto-div">
-                <img class="iconos" src="img/dire-v.png" alt="Dirección Ícono" title="Dirección">
-                <p id="texto-costado">
-                    <strong>
-                    Dirección
-                    </strong> <br>
-                    Calle Falsa, 123.<br>
-                    Posadas, Misiones.
-                </p>
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Mate artesanal color verde" href="img/xl-mate-verde.png"> <title>Mate Verde</title>
+                    <img src="img/xs-mate-verde.png" alt="Mate Verde XS">
+                </a>
             </div>
-        </article>
-        <article class="redes-art">
-            <ul>
-                <li><a href=""> <img src="img/wp-v.png" alt="Ícono WhatsApp" title="Escribinos por WhatsApp"></a></li>
-                <li><a href=""> <img src="img/ig-v.png" alt="Ícono Instagram" title="Visitá nuestro Instagram"></a></li>
-                <li><a href=""> <img src="img/fb-v.png" alt="Ícono Facebook" title="Visitá nuestro Facebook"></a></li>
-            </ul>
-        </article>
-    </div>
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Mate artesanal color rosa" href="img/xl-mate-rosa.png"> <title>Mate Rosa</title>
+                    <img src="img/xs-mate-rosa.png " alt="Mate Rosa XS">
+                </a>
+            </div>
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Blend de hierbas orgánicas" href="img/xl-hierbas.png"> <title>Blend Hierbas</title>
+                    <img src="img/xs-hierbas.png" alt="Blend Hierbas XS">
+                </a>
+            </div>
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Blend con frutas desecadas" href="img/xl-frutas.png"> <title>Blend Frutas</title>
+                        <img src="img/xs-frutas.png" alt="Blends Frutas XS">
+                </a>
+            </div>
+            <div class="producto">
+                <a data-fancybox="gallery" data-caption="Blend con café orgánico" href="img/xl-cafe.png"> <title>Blend Cafe</title>
+                    <img src="img/xs-cafe.png" alt="Blend Cafe XS">
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- CONTACTANOS -->
+    <section class="contenedor">
+        <h1 id="contactanos">CONTACTANOS</h1>
+        <div class="contactanos">
+            <article class="contacto-art">
+                <div class="contacto-div">
+                    <img class="iconos" src="img/correo-v.png" alt="E-Mail Ícono" title="E-Mail">
+                    <p id="texto">
+                        <strong>
+                            E-Mail
+                        </strong> <br>
+                        info@herba.com.ar
+                    </p>
+                </div>
+                <div class="contacto-div">
+                    <img class="iconos" src="img/dire-v.png" alt="Dirección Ícono" title="Dirección">
+                    <p id="texto-costado">
+                        <strong>
+                        Dirección
+                        </strong> <br>
+                        Calle Falsa, 123.<br>
+                        Posadas, Misiones.
+                    </p>
+                </div>
+            </article>
+            <article class="redes-art">
+                <ul>
+                    <li><a href=""> <img src="img/wp-v.png" alt="Ícono WhatsApp" title="Escribinos por WhatsApp"></a>
+                    </li>
+                    <li><a href=""> <img src="img/ig-v.png" alt="Ícono Instagram" title="Visitá nuestro Instagram"></a>
+                    </li>
+                    <li><a href=""> <img src="img/fb-v.png" alt="Ícono Facebook" title="Visitá nuestro Facebook"></a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    <!-- FORMULARIO -->
+        <div class="formulario">
+            <h2 id="registro">Registro newsletter</h2>
+            <p>Envianos la siguiente información para obtener tu código 20% OFF.</p>
+            <form action="" method="post">
+                <div class="espacio">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="Nombre" required>
+                </div>
+                <div class="espacio">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido" id="Apellido" required>
+                </div>
+                <div class="espacio">
+                    <label for="Edad">Edad</label>
+                    <input type="text" name="Edad" id="Edad" required>
+                </div>
+                <div class="espacio">
+                    <label for="Pais">País</label>
+                    <input type="text" name="Pais" id="Pais" required>
+                </div>
+                <div class="espacio">
+                    <label for="E-Mail">E-Mail</label>
+                    <input type="email" name="E-Mail" id="E-Mail" required>
+                </div>
+                <div class="espacio">
+                    <label for="Comentarios">¿Cómo conociste Herba?</label>
+                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                </div>
+                <div class="botones-formulario">
+                    <button class="envia" type="submit">Enviar</button>
+                    <button class="borra" type="reset">Borrar campos</button>
+                </div>
+            </form>
+        </div>
     </section>
 <!-- FOOTER -->
     <footer>
-    <div>
-        <p class="small">
-            <strong>Diseñada por Rodrigo Meiriño - 2022 ©</strong>
-        </p>
-    </div>
+        <div>
+            <p class="small">
+                <strong>Diseñada por Rodrigo Meiriño - 2022 ©</strong>
+            </p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/meiriro/" target="_blank"> <img src="img/ig-c.png"
+                            alt="Imagen logo Instagram" title="Ir al perfil de Instagram"></a></li>
+                <li><a href="https://www.behance.net/rodrigomeiri" target="_blank"> <img src="img/be-c.png"
+                            alt="Imagen logo Behance" title="Ir al perfil de Behance"></a></li>
+                <li><a href="https://rodrigomeirino.myportfolio.com/home" target="_blank"> <img src="img/pf-c.png"
+                            alt="Imagen logo Portfolio" title="Ir al Portfolio"> </a></li>
+            </ul>
+        </div>
     </footer>
-    <!-- jQuery 1.8 or later, 33 KB -->
+<!-- jQuery 1.8 or later, 33 KB -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Fotorama from CDNJS, 19 KB -->
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> 
 </body>
 
 </html>
