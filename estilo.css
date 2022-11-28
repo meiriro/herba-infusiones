@@ -20,13 +20,23 @@ body {
     box-shadow: 100px 40px 60px rgba(0,0,0,.5);
     border-radius: 100px;
     padding-bottom: 40px;
+    margin-bottom: 100px;
 } 
 
 /*TEXTO*/
 h1{
     font-family: 'Forum', cursive;
     font-size: 60px;
+    height: 100px;
+    color: #fcf4dd;        
+    background-color: #eca590;        
+    display: flex;
+    justify-content: center;
+    align-content: center;        
+    align-items: center;
+    border-radius: 20px;
 }
+
 h2{
     font-family: 'Forum', cursive;
     font-size: 48px;
@@ -46,10 +56,10 @@ h2{
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
 }
 p strong{
-    font-weight: 400
+    font-weight: 500
 }
 .hero{
     font-family: 'Forum', cursive;
@@ -63,9 +73,9 @@ p strong{
 }
 a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #fcf4dd;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
 }
 ul{
@@ -85,7 +95,7 @@ nav{
     height: 95px;
     background-color: #eca590;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow:0px 15px 20px rgba(0,0,0,.5);
     top: 0;
@@ -103,10 +113,10 @@ nav div{
 }
 
 .ul-nav{
-    width: 1000px;
+    width: 700px;
     display: flex;
     justify-content: space-around;
-    margin-left: 60px;
+    margin-left: 250px;
     margin-right: 20px;
 }
 
@@ -119,7 +129,7 @@ nav ul{
 }
 
 nav ul li{
-    padding: 15px;
+    padding: 12px;
 }
 
 nav ul li a:hover {
@@ -127,11 +137,10 @@ nav ul li a:hover {
 }
 
 /*HERO*/
-
 .img-hero{
     height: 894px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 80px;
+
     display: flex;
     background-image: url(img/manos-mesa.jpg);
     box-shadow: 100px 40px 60px rgba(0,0,0,.5);
@@ -157,7 +166,7 @@ nav ul li a:hover {
 }
 
 .boton-hero{
-    width: 162px;
+    width: 130px;
     height: 50px;
     text-align: center;
     padding: 10px 12px 10px 12px;
@@ -173,15 +182,7 @@ nav ul li a:hover {
 }
 
 /*MAIN*/
-
 main {
-    padding: 0px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +192,6 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 40px;
     margin-left: 0px;
 }
 
@@ -204,36 +204,24 @@ main article p {
     padding: 40px 40px 0px 40px;
 }
 
-main article h1 {
-    height: 100px;
-    color: #fcf4dd;        
-    background-color: #eca590;
+.texto-dos-columnas{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;        
-    align-items: center;
-    border-radius: 20px;
+}
+
+main article div p{
+    width: 460px;
+  
 }
 
 /*BLENDS*/
-section h1{
-    height: 100px;
-    color: #fcf4dd;
-    background-color: #eca590;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 100px;
-    border-radius: 20px;
-}
-
 .blends{
     display: flex;
     flex-direction: row;
     border-color: #fcf4dd;
     justify-content: space-evenly;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .blends article{
@@ -245,18 +233,18 @@ section h1{
     border-radius: 50px;
     border: 6px #499176;
     border-style: double;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .boton{
-    width: 150px;
+    width: 145px;
     height: 70px;
     text-align: center;
-    padding: 10px 12px 10px 12px;
+    padding: 8px 12px 10px 12px;
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: #499176;
-    font-weight: 400;
+    font-weight: 500;
     color: #fcf4dd;
     box-shadow: 10px 7px 15px rgba(0,0,0,.5);
 }
@@ -288,7 +276,7 @@ section div article p{
     flex-direction: row;
     border-color: #fcf4dd;
     justify-content: space-evenly;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .ofertas article{
@@ -300,18 +288,18 @@ section div article p{
     border-radius: 50px;
     border: 6px #499176;
     border-style: double;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .boton-ofertas{
-    width: 125px;
-    height: 42px;
+    width: 135px;
+    height: 38px;
     text-align: center;
-    padding: 10px 12px 10px 12px;
+    padding: 7px 12px 10px 12px;
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: #499176;
-    font-weight: 400;
+    font-weight: 500;
     color: #fcf4dd;
     box-shadow: 10px 7px 15px rgba(0,0,0,.5);
 }
@@ -340,7 +328,10 @@ section div article p{
     padding: 20px 20px;
 }
 
-
+.productos-p{
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+}
 
 /*CONTACTANOS*/
 #texto-costado{
@@ -450,9 +441,9 @@ input, textarea{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #fcf4dd;
-    font-weight: 400;
+    font-weight: 500;
     height: 42px;
-    padding: 7px 12px 10px 12px;
+    padding: 6px 12px 10px 12px;
     margin: 0px 15px;
     border-radius: 15px;
     box-shadow: 10px 7px 15px rgba(0,0,0,.5);
@@ -514,7 +505,7 @@ footer div ul{
 }
 
 footer div{
-    width: 235px;
+    width: 245px;
 }
 
 footer div p{
